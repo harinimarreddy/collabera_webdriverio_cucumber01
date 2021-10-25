@@ -1,0 +1,127 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634615154085' stop='1634615159563'>
+    <name>The Internet Guinea Pig Website: As a user, I can log into the secure area</name>
+    <title>The Internet Guinea Pig Website: As a user, I can log into the secure area</title>
+    <test-cases>
+        <test-case start='1634615154085' status='passed' stop='1634615154085'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634615154085' status='passed' stop='1634615157333'>
+            <name>Given I am on the login page</name>
+            <title>Given I am on the login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634615154086' status='passed' stop='1634615157332'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='532f4799-5acd-4e81-bdb7-ce02c2b9f3d6-attachment.json' type='application/json' size='45'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1634615157333' status='broken' stop='1634615159562'>
+            <name>When I login with foobar and barfoo</name>
+            <title>When I login with foobar and barfoo</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634615157333' status='passed' stop='1634615157339'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='340a2d03-4aa8-47de-bc01-6fe05ec2bcee-attachment.json' type='application/json' size='61'/>
+                        <attachment title='Response' source='6e8d40f5-9858-4dfa-958b-ccc9add6a13e-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634615157341' status='passed' stop='1634615157362'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='8dac9d1f-d552-4093-bbac-4bb7a66438d6-attachment.json' type='application/json' size='8337'/>
+                        <attachment title='Response' source='c0ff0884-483f-4dba-a57a-9317f621a073-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634615157362' status='passed' stop='1634615157386'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e9fea66e-45ed-416c-82fb-541cdbcb8985-attachment.json' type='application/json' size='61'/>
+                        <attachment title='Response' source='cc4a890f-2d04-4d3f-afbb-9d72942d0ec7-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634615157387' status='passed' stop='1634615159561'>
+                    <name>POST /session/:sessionId/element/16816323-5d77-4b06-a4b2-88bed3b54ea1/click</name>
+                    <title>POST /session/:sessionId/element/16816323-5d77-4b06-a4b2-88bed3b54ea1/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: browser.scroll is not a function</message>
+                <stack-trace>TypeError: browser.scroll is not a function
+                    at LoginPage.signUp (/Users/hmarreddy/WebDriverIO_Cucumber_Project/features/pageobjects/login.page.js:104:23)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at World.&lt;anonymous> (/Users/hmarreddy/WebDriverIO_Cucumber_Project/features/step-definitions/testCase01.js:20:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1634615159563' status='pending' stop='1634615159563'>
+            <name>Then I should see a flash message saying Your username is invalid!</name>
+            <title>Then I should see a flash message saying Your username is invalid!</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634615159563' status='passed' stop='1634615159563'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

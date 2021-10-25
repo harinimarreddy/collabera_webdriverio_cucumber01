@@ -1,0 +1,112 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634624705047' stop='1634624705060'>
+    <name>The Internet Guinea Pig Website: As a user, I can log into the secure area</name>
+    <title>The Internet Guinea Pig Website: As a user, I can log into the secure area</title>
+    <test-cases>
+        <test-case start='1634624705047' status='passed' stop='1634624705048'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634624705048' status='broken' stop='1634624705059'>
+            <name>Given I am on the login page</name>
+            <title>Given I am on the login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634624705049' status='broken' stop='1634624705059'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='47ae99d6-7487-4d43-a6be-a9ac12335d2c-attachment.json' type='application/json' size='45'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: target window already closed</message>
+                <stack-trace>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=94.0.4606.81)
+                0   chromedriver                        0x00000001063675e9 chromedriver + 2749929
+                1   chromedriver                        0x0000000106a1e5c3 chromedriver + 9790915
+                2   chromedriver                        0x00000001060f2828 chromedriver + 174120
+                3   chromedriver                        0x00000001060d42d4 chromedriver + 49876
+                4   chromedriver                        0x0000000106147a1c chromedriver + 522780
+                5   chromedriver                        0x00000001061562cf chromedriver + 582351
+                6   chromedriver                        0x0000000106144933 chromedriver + 510259
+                7   chromedriver                        0x000000010611ad6e chromedriver + 339310
+                8   chromedriver                        0x000000010611c095 chromedriver + 344213
+                9   chromedriver                        0x000000010632e3bf chromedriver + 2515903
+                10  chromedriver                        0x0000000106340f2f chromedriver + 2592559
+                11  chromedriver                        0x0000000106312bdf chromedriver + 2403295
+                12  chromedriver                        0x00000001063422da chromedriver + 2597594
+                13  chromedriver                        0x0000000106323bcc chromedriver + 2472908
+                14  chromedriver                        0x000000010635b988 chromedriver + 2701704
+                15  chromedriver                        0x000000010635bb11 chromedriver + 2702097
+                16  chromedriver                        0x000000010636c5e8 chromedriver + 2770408
+                17  libsystem_pthread.dylib             0x00007fff72c08109 _pthread_start + 148
+                18  libsystem_pthread.dylib             0x00007fff72c03b8b thread_start + 15
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1634624705059' status='pending' stop='1634624705059'>
+            <name>When I login with foobar and barfoo</name>
+            <title>When I login with foobar and barfoo</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634624705059' status='pending' stop='1634624705059'>
+            <name>Then I should see a flash message saying Your username is invalid!</name>
+            <title>Then I should see a flash message saying Your username is invalid!</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634624705059' status='passed' stop='1634624705060'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

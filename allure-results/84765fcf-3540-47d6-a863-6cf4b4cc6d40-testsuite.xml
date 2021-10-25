@@ -1,0 +1,137 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634615187881' stop='1634615198968'>
+    <name>The Internet Guinea Pig Website: As a user, I can log into the secure area</name>
+    <title>The Internet Guinea Pig Website: As a user, I can log into the secure area</title>
+    <test-cases>
+        <test-case start='1634615187881' status='passed' stop='1634615187884'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634615187885' status='passed' stop='1634615196431'>
+            <name>Given I am on the login page</name>
+            <title>Given I am on the login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634615187887' status='passed' stop='1634615196429'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='94ae754a-2124-4c1a-b77f-9cf08cef5b4e-attachment.json' type='application/json' size='45'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1634615196431' status='broken' stop='1634615198966'>
+            <name>When I login with tomsmith and SuperSecretPassword!</name>
+            <title>When I login with tomsmith and SuperSecretPassword!</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634615196433' status='passed' stop='1634615196445'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='caa86897-d8c0-4667-966c-3983bceb7545-attachment.json' type='application/json' size='61'/>
+                        <attachment title='Response' source='0af9646d-d863-4f85-a36b-0d01d997c455-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634615196451' status='passed' stop='1634615196552'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='f443560a-a979-4a77-bc39-8b6a0bd8858e-attachment.json' type='application/json' size='8337'/>
+                        <attachment title='Response' source='c6404bb6-0432-4ebd-8363-819f3f7b5689-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634615196552' status='passed' stop='1634615196559'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='ba0b983e-7e20-4b60-938c-81171f931a59-attachment.json' type='application/json' size='61'/>
+                        <attachment title='Response' source='63e79815-78bd-4c5e-9fad-6f3a0fb21f68-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634615196561' status='passed' stop='1634615198943'>
+                    <name>POST /session/:sessionId/element/2f6b3962-af7f-40a7-a5ec-7f0a6222bc14/click</name>
+                    <title>POST /session/:sessionId/element/2f6b3962-af7f-40a7-a5ec-7f0a6222bc14/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1634615198944' status='passed' stop='1634615198959'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='1ecdcc71-c828-4d55-8a24-77647c4ce6af-attachment.json' type='application/json' size='67'/>
+                        <attachment title='Response' source='531da354-3cd6-4731-ab48-1536d007cb5b-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: elem[prop] is not a function</message>
+                <stack-trace>TypeError: elem[prop] is not a function
+                    at /Users/hmarreddy/node_modules/@wdio/utils/build/shim.js:247:38
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at LoginPage.signUp (/Users/hmarreddy/WebDriverIO_Cucumber_Project/features/pageobjects/login.page.js:102:9)
+                    at World.&lt;anonymous> (/Users/hmarreddy/WebDriverIO_Cucumber_Project/features/step-definitions/testCase01.js:20:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1634615198966' status='pending' stop='1634615198966'>
+            <name>Then I should see a flash message saying You logged into a secure area!</name>
+            <title>Then I should see a flash message saying You logged into a secure area!</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634615198966' status='passed' stop='1634615198967'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

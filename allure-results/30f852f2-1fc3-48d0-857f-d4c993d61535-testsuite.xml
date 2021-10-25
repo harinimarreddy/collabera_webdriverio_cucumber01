@@ -1,0 +1,113 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634618115681' stop='1634618115700'>
+    <name>The Internet Guinea Pig Website: As a user, I can log into the secure area</name>
+    <title>The Internet Guinea Pig Website: As a user, I can log into the secure area</title>
+    <test-cases>
+        <test-case start='1634618115681' status='passed' stop='1634618115681'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634618115681' status='broken' stop='1634618115699'>
+            <name>Given I am on the login page</name>
+            <title>Given I am on the login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634618115681' status='broken' stop='1634618115699'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='55d57620-62c9-4101-9208-87a8601f14d7-attachment.json' type='application/json' size='45'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: window was already closed</message>
+                <stack-trace>no such window: window was already closed
+                  (Session info: chrome=94.0.4606.81)
+                0   chromedriver                        0x00000001068f45e9 chromedriver + 2749929
+                1   chromedriver                        0x0000000106fab5c3 chromedriver + 9790915
+                2   chromedriver                        0x000000010667f828 chromedriver + 174120
+                3   chromedriver                        0x000000010666fb7e chromedriver + 109438
+                4   chromedriver                        0x0000000106670f52 chromedriver + 114514
+                5   chromedriver                        0x0000000106669d02 chromedriver + 85250
+                6   chromedriver                        0x0000000106680cb3 chromedriver + 179379
+                7   chromedriver                        0x00000001066e331c chromedriver + 582428
+                8   chromedriver                        0x00000001066d1933 chromedriver + 510259
+                9   chromedriver                        0x00000001066a7d6e chromedriver + 339310
+                10  chromedriver                        0x00000001066a9095 chromedriver + 344213
+                11  chromedriver                        0x00000001068bb3bf chromedriver + 2515903
+                12  chromedriver                        0x00000001068cdf2f chromedriver + 2592559
+                13  chromedriver                        0x000000010689fbdf chromedriver + 2403295
+                14  chromedriver                        0x00000001068cf2da chromedriver + 2597594
+                15  chromedriver                        0x00000001068b0bcc chromedriver + 2472908
+                16  chromedriver                        0x00000001068e8988 chromedriver + 2701704
+                17  chromedriver                        0x00000001068e8b11 chromedriver + 2702097
+                18  chromedriver                        0x00000001068f95e8 chromedriver + 2770408
+                19  libsystem_pthread.dylib             0x00007fff72c08109 _pthread_start + 148
+                20  libsystem_pthread.dylib             0x00007fff72c03b8b thread_start + 15
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1634618115699' status='pending' stop='1634618115699'>
+            <name>When I login with foobar and barfoo</name>
+            <title>When I login with foobar and barfoo</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634618115699' status='pending' stop='1634618115699'>
+            <name>Then I should see a flash message saying Your username is invalid!</name>
+            <title>Then I should see a flash message saying Your username is invalid!</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634618115700' status='passed' stop='1634618115700'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
